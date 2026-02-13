@@ -1,7 +1,7 @@
 export const siteMetadata = {
-  title: "Ryan Collins portfolio",
-  author: "Ryan Collins",
-  headerTitle: "Ryan Collins",
+  title: "Ryan Jin portfolio",
+  author: "Ryan Jin",
+  headerTitle: "Ryan Jin",
   description: "Frontend and Reactjs developer",
   language: "en-us",
   theme: "light",

@@ -10,18 +10,18 @@ export default function About() {
   return (
     <>
       <NextSeo
-        title="About Ryan Collins | Software Developer"
-        description="Learn more about Ryan Collins, a dedicated Software Developer with 2 years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."
+        title="About Ryan Jin | Software Developer"
+        description="Learn more about Ryan Jin, a dedicated Software Developer with 2 years of experience. Discover the journey, skills, and passion that drive me to create innovative and user-friendly web solutions."
         canonical={`${siteMetadata.siteUrl}/about`}
         openGraph={{
           url: `${siteMetadata.siteUrl}/about`,
-          title: "Learn About Ryan Collins - Software Developer",
+          title: "Learn About Ryan Jin - Software Developer",
           description:
-            "Dive into the story of Ryan Collins, a Software Developer. Uncover the experiences, skills, and passion that fuel a commitment to delivering exceptional web solutions.",
+            "Dive into the story of Ryan Jin, a Software Developer. Uncover the experiences, skills, and passion that fuel a commitment to delivering exceptional web solutions.",
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
-              alt: "Ryan Collins - Portfolio Image",
+              alt: "Ryan Jin - Portfolio Image",
             },
           ],
           siteName: siteMetadata.siteName,
