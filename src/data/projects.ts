@@ -93,4 +93,60 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     sourceCodeHref: "https://github.com/collins011008/ManyGames",
     liveWebsiteHref: "http://torqapp.io",
   },
+  {
+    name: "Real Dudes Inc",
+    favicon: "/images/projects/logos/manygames.ico",
+    imageUrl: [
+      "/images/projects/13.png",
+      "/images/projects/14.png",
+      "/images/projects/15.png",
+      "/images/projects/16.png",
+      "/images/projects/17.png",
+    ],
+    description:
+      "The client wanted to continue working on the development of the project, which the previous developer had left.",
+    sourceCodeHref: "https://github.com/collins011008/ManyGames",
+    liveWebsiteHref: "https://www.realdudesinc.com/",
+  },
+  {
+    name: "TAM Autohof",
+    favicon: "/images/projects/logos/manygames.ico",
+    imageUrl: [
+      "/images/projects/18.png",
+      "/images/projects/19.png",
+      "/images/projects/20.png",
+      "/images/projects/21.png",
+    ],
+    description:
+      "TAM Autohof is a network of petrol stations in the Czech Republic and Slovakia. The site is built on PHP and Symfony; WordPress handles the CMS functionality and administration interface.",
+    sourceCodeHref: "https://github.com/collins011008/ManyGames",
+    liveWebsiteHref: "https://autohof.sk/en",
+  },
+  {
+    name: "ISIT",
+    favicon: "/images/projects/logos/manygames.ico",
+    imageUrl: [
+      "/images/projects/22.png",
+      "/images/projects/23.png",
+      "/images/projects/24.png",
+    ],
+    description:
+      "ISIT is a multilingual school in Paris for international careers. I worked as a full-stack developer doing the front end in Twig/Sass and the back end in WordPress with Symphony.",
+    sourceCodeHref: "https://github.com/collins011008/ManyGames",
+    liveWebsiteHref: "https://www.isit-paris.fr/",
+  },
+  {
+    name: "CDS Vic",
+    favicon: "/images/projects/logos/manygames.ico",
+    imageUrl: [
+      "/images/projects/25.png",
+      "/images/projects/26.png",
+      "/images/projects/27.png",
+      "/images/projects/28.png",
+    ],
+    description:
+      "I contributed to developing a React/Next.js/Strapi-based website for Container Exchange Services.",
+    sourceCodeHref: "https://github.com/collins011008/ManyGames",
+    liveWebsiteHref: "https://cdsvic.org.au/",
+  },
 ];
