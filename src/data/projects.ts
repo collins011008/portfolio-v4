@@ -49,7 +49,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     imageUrl: ["/images/projects/1.png"],
     description:
       "MindAI's main goal is to democratize access to decentralized artificial intelligence, ensuring maximum privacy and security. Your data will never be collected or given to third parties, eliminating the issues of tracking and monetization of personal information.",
-    sourceCodeHref: "https://github.com/tycoon011008/jsontree",
+    sourceCodeHref: "https://github.com/collins011008/jsontree",
     liveWebsiteHref: "https://docs.mindaiproject.com/utility/mindai-web-app",
   },
   {
@@ -64,7 +64,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     ],
     description:
       "CoreBridge provides a B2B platform that helps businesses launch their own customizable eCommerce store.",
-    sourceCodeHref: "https://github.com/tycoon011008/kanban",
+    sourceCodeHref: "https://github.com/collins011008/kanban",
     liveWebsiteHref: "https://www.corebridge.net/",
   },
   {
@@ -77,7 +77,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     ],
     description:
       "TOPASS tokens provide a unique safeguard against the possibility of counterfeit goods with single-package accuracy.",
-    sourceCodeHref: "https://github.com/tycoon011008/ManyGames",
+    sourceCodeHref: "https://github.com/collins011008/ManyGames",
     liveWebsiteHref: "https://rsoft.pl/en/topass.html",
   },
   {
@@ -90,7 +90,7 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     ],
     description:
       "Utilizing Flutter for mobile development and Laravel for the back end, I ensured seamless performance across iOS and Android platforms.",
-    sourceCodeHref: "https://github.com/tycoon011008/ManyGames",
+    sourceCodeHref: "https://github.com/collins011008/ManyGames",
     liveWebsiteHref: "http://torqapp.io",
   },
 ];
