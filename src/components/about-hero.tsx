@@ -1,10 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { AnimatePresence } from "framer-motion";
 
 import FadeUp from "@/animation/fade-up";
-import FadeRight from "@/animation/fade-right";
 import heroProfileImg from "@/public/images/hero.png";
 import DuotoneImage from "./duotone-image";
 
