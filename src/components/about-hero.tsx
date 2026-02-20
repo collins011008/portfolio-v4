@@ -59,25 +59,6 @@ export default function AboutHero() {
               and web development.
             </p>
           </FadeUp>
-          <FadeRight
-            key="hero-location"
-            duration={0.6}
-            delay={0.8}
-            className="mr-0 mt-8 flex items-center justify-center gap-4 lg:mr-8 lg:justify-end"
-          >
-            <div className="relative flex w-12 gap-4 overflow-hidden rounded-md">
-              <Image
-                className="-z-10 h-full w-full bg-cover bg-no-repeat"
-                alt="Vietnam flag"
-                src="https://flagcdn.com/ca.svg"
-                width={15}
-                height={15}
-              />
-            </div>
-            <span className="text-lg font-medium text-foreground">
-              Prince George, Canada
-            </span>
-          </FadeRight>
         </AnimatePresence>
       </div>
     </div>
