@@ -85,8 +85,8 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     favicon: "/images/projects/logos/manygames.ico",
     imageUrl: [
       "/images/projects/10.png",
-      "/images/projects/11.png",
-      "/images/projects/12.png",
+      "/images/projects/11.PNG",
+      "/images/projects/12.PNG",
     ],
     description:
       "Utilizing Flutter for mobile development and Laravel for the back end, I ensured seamless performance across iOS and Android platforms.",
@@ -97,11 +97,11 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "Real Dudes Inc",
     favicon: "/images/projects/logos/manygames.ico",
     imageUrl: [
-      "/images/projects/13.png",
-      "/images/projects/14.png",
-      "/images/projects/15.png",
-      "/images/projects/16.png",
-      "/images/projects/17.png",
+      "/images/projects/13.PNG",
+      "/images/projects/14.PNG",
+      "/images/projects/15.PNG",
+      "/images/projects/16.PNG",
+      "/images/projects/17.PNG",
     ],
     description:
       "The client wanted to continue working on the development of the project, which the previous developer had left.",
@@ -112,10 +112,10 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "TAM Autohof",
     favicon: "/images/projects/logos/manygames.ico",
     imageUrl: [
-      "/images/projects/18.png",
-      "/images/projects/19.png",
-      "/images/projects/20.png",
-      "/images/projects/21.png",
+      "/images/projects/18.PNG",
+      "/images/projects/19.PNG",
+      "/images/projects/20.PNG",
+      "/images/projects/21.PNG",
     ],
     description:
       "TAM Autohof is a network of petrol stations in the Czech Republic and Slovakia. The site is built on PHP and Symfony; WordPress handles the CMS functionality and administration interface.",
@@ -126,9 +126,9 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "ISIT",
     favicon: "/images/projects/logos/manygames.ico",
     imageUrl: [
-      "/images/projects/22.png",
-      "/images/projects/23.png",
-      "/images/projects/24.png",
+      "/images/projects/22.PNG",
+      "/images/projects/23.PNG",
+      "/images/projects/24.PNG",
     ],
     description:
       "ISIT is a multilingual school in Paris for international careers. I worked as a full-stack developer doing the front end in Twig/Sass and the back end in WordPress with Symphony.",
@@ -139,10 +139,10 @@ export const PROJECTS_CARD: ProjectCardProps[] = [
     name: "CDS Vic",
     favicon: "/images/projects/logos/manygames.ico",
     imageUrl: [
-      "/images/projects/25.png",
-      "/images/projects/26.png",
-      "/images/projects/27.png",
-      "/images/projects/28.png",
+      "/images/projects/25.PNG",
+      "/images/projects/26.PNG",
+      "/images/projects/27.PNG",
+      "/images/projects/28.PNG",
     ],
     description:
       "I contributed to developing a React/Next.js/Strapi-based website for Container Exchange Services.",
