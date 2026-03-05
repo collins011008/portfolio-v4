@@ -1,5 +1,6 @@
 import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
+import { appWithTranslation } from "next-i18next";
 
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "next-themes";
@@ -9,7 +10,7 @@ import MainLayout from "@/layout/main-layout";
 import CursorTrailCanvas from "@/components/cursor-trail-canvas";
 import "@/styles/globals.css";
 
-export default function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   return (
     <>
@@ -25,3 +26,5 @@ export default function App({ Component, pageProps }: AppProps) {
     </>
   );
 }
+
+export default appWithTranslation(App);

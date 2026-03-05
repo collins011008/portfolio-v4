@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "Ryan Jin",
+    "title": "Full Stack & Blockchain Developer",
+    "description": "I'm a Full Stack and Blockchain Developer with over {{years}} of experience building scalable web and decentralized applications from concept to deployment. I've delivered end-to-end solutions across Frontend, Backend, Mobile, Blockchain Systems, helping clients turn complex ideas into reliable products. Known for strong ownership, adaptability, and problem-solving, I focus on clean architecture, performance, and real business impact. I thrive in both independent and team environments, consistently delivering high-quality results on time."
+  },
+  "about": {
+    "greeting": "Hi, I'm Ryan Jin",
+    "description1": "I'm a Full Stack and Blockchain Engineer with over 7 years of experience building scalable web, mobile, and DApps. I've worked in both product companies and as a freelance senior developer, delivering solutions across fintech, blockchain, and AI-driven platforms. Recently, as a self-employed developer, I built Telegram bots with crypto swap and AI chat functionality, developed AI-powered web platforms from scratch, and integrated smart contracts using Web3 and Ethers.js, including crypto-based payment systems. Overall, I specialize in building full-stack systems end-to-end, optimizing performance, and delivering secure blockchain-integrated solutions.",
+    "description2Start": "Explore my latest",
+    "description2End": "showcasing my expertise in Reactjs, Nextjs, Javascript, Typescript and web development.",
+    "projectsLink": "projects"
+  },
+  "experience": {
+    "title": "Experience",
+    "educationTitle": "Education",
+    "items": [
+      {
+        "title": "Full stack & Blockchain Developer",
+        "organisation": "Self-Employed",
+        "date": "2024.01 - 2025.12",
+        "location": "Remote",
+        "description": "As a freelance senior full-stack developer, I have worked on the development of several large-scale and startup apps, working as part of agile teams or as an individual developer."
+      },
+      {
+        "title": "Senior Full stack Engineer",
+        "organisation": "CoreBridge",
+        "date": "2022.02 - 2023.11",
+        "location": "Remote",
+        "description": "Fixed thread starvation in the back end by refactoring APIs to work with async/await properly. Reduced socket connection usage in the back-end servers by properly handling HTTP client connections in the app."
+      },
+      {
+        "title": "Software Engineer",
+        "organisation": "R-SOFT",
+        "date": "2019.06 - 2021.12",
+        "location": "Remote",
+        "description": "Developed software for a so-called durable medium using Ethereum and IPFS. Built the back end using Node.js. Created smart contracts (Solidity) for mass document handling and user authentication."
+      },
+      {
+        "title": "Software Engineer",
+        "organisation": "Torq Holdings, Inc",
+        "date": "2018.06 - 2020.09",
+        "location": "Remote",
+        "description": "Led the complete UI overhaul to a minimalist interface, enhancing user experience and onboarding processes. Enhanced stability by implementing event tracking tools and a credit-card-free trial system, increasing app usage and engagement."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills"
+  },
+  "projects": {
+    "title": "Projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "subtitle": "Here are some of the projects I'd like to share",
+    "githubText": "Visit my github to see some of the latest projects",
+    "items": [
+      {
+        "name": "MindAI",
+        "description": "MindAI's main goal is to democratize access to decentralized artificial intelligence, ensuring maximum privacy and security. Your data will never be collected or given to third parties, eliminating the issues of tracking and monetization of personal information."
+      },
+      {
+        "name": "CoreBridge",
+        "description": "CoreBridge provides a B2B platform that helps businesses launch their own customizable eCommerce store."
+      },
+      {
+        "name": "TOPASS NFT",
+        "description": "TOPASS tokens provide a unique safeguard against the possibility of counterfeit goods with single-package accuracy."
+      },
+      {
+        "name": "TORQ App",
+        "description": "Utilizing Flutter for mobile development and Laravel for the back end, I ensured seamless performance across iOS and Android platforms."
+      },
+      {
+        "name": "Real Dudes Inc",
+        "description": "The client wanted to continue working on the development of the project, which the previous developer had left."
+      },
+      {
+        "name": "TAM Autohof",
+        "description": "TAM Autohof is a network of petrol stations in the Czech Republic and Slovakia. The site is built on PHP and Symfony; WordPress handles the CMS functionality and administration interface."
+      },
+      {
+        "name": "ISIT",
+        "description": "ISIT is a multilingual school in Paris for international careers. I worked as a full-stack developer doing the front end in Twig/Sass and the back end in WordPress with Symphony."
+      },
+      {
+        "name": "CDS Vic",
+        "description": "I contributed to developing a React/Next.js/Strapi-based website for Container Exchange Services."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Failed to send message. Please try again."
+  },
+  "footer": {
+    "rights": "All rights reserved."
+  },
+  "language": {
+    "select": "Language",
+    "en": "English",
+    "zh": "中文"
+  }
+}

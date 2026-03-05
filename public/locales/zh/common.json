@@ -1,0 +1,116 @@
+{
+  "nav": {
+    "home": "首页",
+    "about": "关于",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "hero": {
+    "name": "Ryan Jin",
+    "title": "全栈与区块链开发工程师",
+    "description": "我是一名拥有{{years}}经验的全栈与区块链开发工程师，专注于构建可扩展的Web应用和去中心化应用，从概念到部署全程把控。我提供端到端的解决方案，涵盖前端、后端、移动端和区块链系统，帮助客户将复杂想法转化为可靠的产品。以强烈的责任心、适应能力和问题解决能力著称，我专注于干净的架构、性能和真实的业务价值。我既能独立工作也能团队协作，始终如一地按时交付高质量成果。"
+  },
+  "about": {
+    "greeting": "你好，我是 Ryan Jin",
+    "description1": "我是一名拥有7年以上经验的全栈与区块链工程师，专注于构建可扩展的Web、移动和DApp应用。我曾在产品公司和自由职业高级开发者的角色中工作，为金融科技、区块链和AI驱动平台提供解决方案。最近，作为自由开发者，我开发了具备加密货币兑换和AI聊天功能的Telegram机器人，从零开始构建AI驱动的Web平台，并使用Web3和Ethers.js集成智能合约，包括基于加密货币的支付系统。总的来说，我专注于端到端构建全栈系统、优化性能和交付安全的区块链集成解决方案。",
+    "description2Start": "探索我最新的",
+    "description2End": "，展示我在Reactjs、Nextjs、Javascript、Typescript和Web开发方面的专业知识。",
+    "projectsLink": "项目"
+  },
+  "experience": {
+    "title": "工作经历",
+    "educationTitle": "教育背景",
+    "items": [
+      {
+        "title": "全栈与区块链开发工程师",
+        "organisation": "自由职业",
+        "date": "2024.01 - 2025.12",
+        "location": "远程",
+        "description": "作为一名自由职业高级全栈开发工程师，我参与了多个大型和初创应用的开发，作为敏捷团队的一员或独立开发者工作。"
+      },
+      {
+        "title": "高级全栈工程师",
+        "organisation": "CoreBridge",
+        "date": "2022.02 - 2023.11",
+        "location": "远程",
+        "description": "通过重构API以正确使用async/await，修复了后端的线程饥饿问题。通过正确处理应用中的HTTP客户端连接，减少了后端服务器的套接字连接使用。"
+      },
+      {
+        "title": "软件工程师",
+        "organisation": "R-SOFT",
+        "date": "2019.06 - 2021.12",
+        "location": "远程",
+        "description": "使用以太坊和IPFS开发持久性介质软件。使用Node.js构建后端。创建智能合约（Solidity）用于大规模文档处理和用户认证。"
+      },
+      {
+        "title": "软件工程师",
+        "organisation": "Torq Holdings, Inc",
+        "date": "2018.06 - 2020.09",
+        "location": "远程",
+        "description": "主导了UI全面改版为极简界面，增强用户体验和入职流程。通过实施事件跟踪工具和无信用卡试用系统提高稳定性，增加了应用使用量和参与度。"
+      }
+    ]
+  },
+  "skills": {
+    "title": "技能"
+  },
+  "projects": {
+    "title": "项目",
+    "viewProject": "查看项目",
+    "viewCode": "查看代码",
+    "subtitle": "以下是我想要分享的一些项目",
+    "githubText": "访问我的GitHub查看更多最新项目",
+    "items": [
+      {
+        "name": "MindAI",
+        "description": "MindAI的主要目标是民主化去中心化人工智能的访问，确保最大的隐私和安全。您的数据永远不会被收集或提供给第三方，消除了跟踪和 monetization 个人信息的问题。"
+      },
+      {
+        "name": "CoreBridge",
+        "description": "CoreBridge提供了一个B2B平台，帮助企业启动自己的可定制电子商务商店。"
+      },
+      {
+        "name": "TOPASS NFT",
+        "description": "TOPASS代币为假冒商品的可能性提供了独特的保障，具有单包精确性。"
+      },
+      {
+        "name": "TORQ App",
+        "description": "利用Flutter进行移动开发，Laravel进行后端开发，我确保了在iOS和Android平台上的无缝性能。"
+      },
+      {
+        "name": "Real Dudes Inc",
+        "description": "客户希望继续开发前一个开发者遗留的项目。"
+      },
+      {
+        "name": "TAM Autohof",
+        "description": "TAM Autohof是捷克共和国和斯洛伐克的加油站网络。该网站使用PHP和Symfony构建；WordPress处理CMS功能和管理界面。"
+      },
+      {
+        "name": "ISIT",
+        "description": "ISIT是巴黎的一所国际职业多语言学校。我作为全栈开发人员，使用Twig/Sass做前端，WordPress和Symphony做后端。"
+      },
+      {
+        "name": "CDS Vic",
+        "description": "我为Container Exchange Services开发了一个基于React/Next.js/Strapi的网站。"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我",
+    "name": "姓名",
+    "email": "邮箱",
+    "message": "留言",
+    "send": "发送消息",
+    "sending": "发送中...",
+    "success": "消息发送成功！",
+    "error": "消息发送失败，请重试。"
+  },
+  "footer": {
+    "rights": "版权所有"
+  },
+  "language": {
+    "select": "语言",
+    "en": "English",
+    "zh": "中文"
+  }
+}

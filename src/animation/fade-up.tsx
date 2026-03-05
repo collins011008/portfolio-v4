@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
 
@@ -15,6 +15,12 @@ export default function FadeUp({
   delay,
   whileInView = false,
 }: FadeUpProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const animation = {
     opacity: 1,
     y: 0,
@@ -24,9 +30,13 @@ export default function FadeUp({
       delay,
     },
   };
+
+  // Use initial state only after mounting to prevent hydration mismatch
+  const initial = isMounted ? { y: 200, opacity: 0 } : { y: 0, opacity: 1 };
+
   return (
     <motion.div
-      initial={{ y: 200, opacity: 0 }}
+      initial={initial}
       whileInView={whileInView ? animation : {}}
       animate={!whileInView ? animation : {}}
     >

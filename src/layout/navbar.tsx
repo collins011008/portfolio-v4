@@ -1,11 +1,13 @@
 import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "next-i18next";
 
 import { AnimatePresence, motion } from "framer-motion";
 
 import MenuLogo from "@/components/utility/menu-button";
 import ThemeSwitch from "@/components/utility/theme-switch";
+import LanguageSwitcher from "@/components/utility/language-switcher";
 import AnimatedLogo from "@/animation/animated-logo";
 import MobileMenu from "@/components/utility/mobile-menu";
 import { classNames } from "@/utility/classNames";
@@ -23,6 +25,7 @@ export interface NavbarProps {
 
 export default function Navbar(props: NavbarProps) {
   const pathName = usePathname();
+  const { t } = useTranslation("common");
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -74,13 +77,16 @@ export default function Navbar(props: NavbarProps) {
                         className="absolute inset-0 -z-10 rounded-full bg-accent group-hover:bg-accent/80"
                       ></motion.span>
                     )}
-                    {_link.title}
+                    {t(_link.title)}
                   </Link>
                 </li>
               );
             })}
           </ul>
-          <ThemeSwitch />
+          <div className="flex items-center gap-1 border-l border-zinc-200 pl-2 dark:border-zinc-700">
+            <LanguageSwitcher />
+            <ThemeSwitch />
+          </div>
         </nav>
         <AnimatePresence>
           <MenuLogo open={isModalOpen} toggle={toggleModal} />

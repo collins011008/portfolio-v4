@@ -64,14 +64,12 @@ export default function ExperienceShowcaseListItem(
       >
         <h3 className="text-base font-bold text-foreground sm:text-xl md:text-2xl">
           {props.title}{" "}
-          <h3
-            // href={"#"}
+          <span
             className="text-accent"
-            // target="_blank"
             rel="nofollow"
           >
             @{props.organisation.name}
-          </h3>
+          </span>
         </h3>
         <span className="text-sm font-medium text-foreground xs:text-base">
           {props.date} | {props.location}

@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useState } from "react";
 
 import { motion } from "framer-motion";
 
@@ -17,6 +17,12 @@ export default function FadeRight({
   className,
   whileInView = false,
 }: FadeRightProps) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   const animation = {
     opacity: 1,
     x: 0,
@@ -26,9 +32,13 @@ export default function FadeRight({
       delay,
     },
   };
+
+  // Use initial state only after mounting to prevent hydration mismatch
+  const initial = isMounted ? { x: -100, opacity: 0 } : { x: 0, opacity: 1 };
+
   return (
     <motion.div
-      initial={{ x: -100, opacity: 0 }}
+      initial={initial}
       whileInView={whileInView ? animation : undefined}
       animate={!whileInView ? animation : undefined}
       className={className}

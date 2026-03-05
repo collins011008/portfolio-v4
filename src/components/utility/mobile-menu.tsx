@@ -1,10 +1,12 @@
 import { Dispatch, Fragment, SetStateAction } from "react";
 import { useRouter } from "next/router";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "next-i18next";
 
 import { Dialog, Transition } from "@headlessui/react";
 
 import ThemeSwitch from "@/components/utility/theme-switch";
+import LanguageSwitcher from "@/components/utility/language-switcher";
 import { type NavbarProps } from "@/layout/navbar";
 import { classNames } from "@/utility/classNames";
 
@@ -20,6 +22,7 @@ export default function MobileMenu({
 }: MobileMenuProps) {
   const pathName = usePathname();
   const router = useRouter();
+  const { t } = useTranslation("common");
 
   const handleClick = (href: string) => {
     setOpenMenu(false);
@@ -53,10 +56,13 @@ export default function MobileMenu({
                         "absolute -bottom-1 left-0 h-1 rounded-lg bg-accent transition-[width] duration-300 group-hover:w-full",
                       )}
                     ></span>
-                    {link.title}
+                    {t(link.title)}
                   </button>
                 ))}
-                <ThemeSwitch setClose={setOpenMenu} />
+                <div className="flex items-center gap-4">
+                  <LanguageSwitcher />
+                  <ThemeSwitch setClose={setOpenMenu} />
+                </div>
               </div>
               <div className="absolute bottom-0 py-6">©2023 Ryan Jin</div>
             </Dialog.Panel>

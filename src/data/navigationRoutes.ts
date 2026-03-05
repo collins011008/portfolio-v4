@@ -1,7 +1,7 @@
 import { NavbarRoutes } from "@/layout/navbar";
 
 export const routes: NavbarRoutes = [
-  { title: "Home", href: "/" },
-  { title: "About", href: "/about" },
-  { title: "Projects", href: "/projects" },
+  { title: "nav.home", href: "/" },
+  { title: "nav.about", href: "/about" },
+  { title: "nav.projects", href: "/projects" },
 ];

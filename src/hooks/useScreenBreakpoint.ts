@@ -1,13 +1,15 @@
 import { useCallback, useEffect, useState } from "react";
 
 export function useScreenBreakpoint(breakpoint: number) {
-  const [width, setWidth] = useState<boolean>(true);
+  const [isMounted, setIsMounted] = useState(false);
+  const [width, setWidth] = useState<boolean>(false);
 
   const handleResize = useCallback(() => {
     setWidth(window.innerWidth < breakpoint);
   }, [breakpoint]);
 
   useEffect(() => {
+    setIsMounted(true);
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => {
@@ -15,5 +17,6 @@ export function useScreenBreakpoint(breakpoint: number) {
     };
   }, [handleResize]);
 
-  return width;
+  // Return false during SSR to prevent hydration mismatch
+  return isMounted ? width : false;
 }

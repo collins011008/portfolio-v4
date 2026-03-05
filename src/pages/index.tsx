@@ -1,4 +1,7 @@
 import Head from "next/head";
+import { GetStaticProps } from "next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 import { NextSeo } from "next-seo";
 
@@ -8,17 +11,18 @@ import { SKILLS_DATA } from "@/data/skills";
 import { siteMetadata } from "@/data/siteMetaData.mjs";
 
 export default function Home() {
+  const { t } = useTranslation("common");
+
   return (
     <>
       <NextSeo
         title="Ryan Jin | Software Developer"
-        description="Explore the professional portfolio of Ryan Jin, a skilled Software Developer with 2 years of hands-on experience. Discover innovative projects, expertise in modern web technologies, and a passion for creating seamless user experiences."
+        description={t("hero.description", { years: "7+ years" })}
         canonical={siteMetadata.siteUrl}
         openGraph={{
           url: siteMetadata.siteUrl,
           title: "Ryan Jin - Software Developer",
-          description:
-            "Dive into the world of web development with Ryan Jin. Discover a Software Developer with 2 years of expertise, showcasing cutting-edge projects and a commitment to crafting exceptional user interfaces.",
+          description: t("hero.description", { years: "7+ years" }),
           images: [
             {
               url: `${siteMetadata.siteUrl}${siteMetadata.twitterImage}`,
@@ -53,3 +57,11 @@ export default function Home() {
     </>
   );
 }
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale || "en", ["common"])),
+    },
+  };
+};
