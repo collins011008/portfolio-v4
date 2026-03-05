@@ -15,11 +15,15 @@ export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const currentLanguage = languages.find((lang) => lang.code === locale) || languages[0];
+  const currentLanguage =
+    languages.find((lang) => lang.code === locale) || languages[0];
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (containerRef.current && !containerRef.current.contains(event.target as Node)) {
+      if (
+        containerRef.current &&
+        !containerRef.current.contains(event.target as Node)
+      ) {
         setIsOpen(false);
       }
     };
@@ -39,7 +43,7 @@ export default function LanguageSwitcher() {
         onClick={() => setIsOpen(!isOpen)}
         className={classNames(
           "flex items-center gap-2 rounded-full p-2 transition-colors duration-200",
-          "hover:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent/50"
+          "hover:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent/50",
         )}
         aria-label="Switch language"
         aria-expanded={isOpen}
@@ -60,7 +64,7 @@ export default function LanguageSwitcher() {
             className={classNames(
               "absolute right-0 mt-2 min-w-[140px] rounded-xl border border-zinc-200",
               "bg-white p-1 shadow-lg dark:border-accent/30 dark:bg-zinc-900",
-              "z-50"
+              "z-50",
             )}
           >
             {languages.map((language) => (
@@ -72,7 +76,7 @@ export default function LanguageSwitcher() {
                   "text-sm transition-colors duration-150",
                   locale === language.code
                     ? "bg-accent/10 text-accent dark:bg-accent/20"
-                    : "text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800"
+                    : "text-zinc-700 hover:bg-zinc-100 dark:text-zinc-300 dark:hover:bg-zinc-800",
                 )}
               >
                 <span className="flex items-center gap-2">

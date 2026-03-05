@@ -13,13 +13,17 @@ export default function About() {
   const { t } = useTranslation("common");
 
   // Get translated experience items with fallback to original data
-  const experienceItems = t("experience.items", { returnObjects: true }) as Array<{
-    title: string;
-    organisation: string;
-    date: string;
-    location: string;
-    description: string;
-  }> | string;
+  const experienceItems = t("experience.items", {
+    returnObjects: true,
+  }) as
+    | Array<{
+        title: string;
+        organisation: string;
+        date: string;
+        location: string;
+        description: string;
+      }>
+    | string;
 
   // Ensure experienceItems is an array before mapping
   const translatedExperience = Array.isArray(experienceItems)
@@ -67,8 +71,14 @@ export default function About() {
         ]}
       />
       <AboutHero />
-      <ExperienceShowcaseList title={t("experience.title")} details={translatedExperience} />
-      <ExperienceShowcaseList title={t("experience.educationTitle")} details={EDUCATION} />
+      <ExperienceShowcaseList
+        title={t("experience.title")}
+        details={translatedExperience}
+      />
+      <ExperienceShowcaseList
+        title={t("experience.educationTitle")}
+        details={EDUCATION}
+      />
     </>
   );
 }

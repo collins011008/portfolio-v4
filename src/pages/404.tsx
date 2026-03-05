@@ -1,10 +1,7 @@
 import { GetStaticProps } from "next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "next-i18next";
 
 export default function PageNotFound() {
-  const { t } = useTranslation("common");
-
   return (
     <div className="flex min-h-[700px] items-center justify-center md:max-h-[600px]">
       <div className="-mt-40 flex items-center gap-4 py-8 text-2xl font-bold text-accent md:text-5xl">
